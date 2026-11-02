@@ -8,6 +8,10 @@ nav = [
   "index.md",
 ]
 
+# The site has a single page, so a search box and index add nothing.
+[project.plugins.search]
+enabled = false
+
 [project.theme]
 font = false
 
