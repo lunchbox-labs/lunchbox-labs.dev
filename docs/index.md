@@ -27,15 +27,8 @@ Lunchbox Labs makes an iPhone compass app and plugins for the OpenCode coding ag
     Share native OpenCode settings through agent groups, with one selected
     profile per worktree.
 
-    Add the package to `plugin` in both `opencode.jsonc` and `tui.jsonc`:
-
-    ```json
-    {
-      "plugin": [
-        "@lunchbox-labs/opencode-config-composer"
-      ]
-    }
-    ```
+    Add `@lunchbox-labs/opencode-config-composer` to `plugin` in both
+    `opencode.jsonc` and `tui.jsonc`.
 
     [Config Composer on GitHub](https://github.com/lunchbox-labs/opencode-config-composer)
 
@@ -46,16 +39,8 @@ Lunchbox Labs makes an iPhone compass app and plugins for the OpenCode coding ag
     Share reusable prompt text across native OpenCode agents, commands and
     skills with inline includes. Requires Node 22.18 or later.
 
-    Add the package to `plugin` in `opencode.jsonc`, and to `tui.jsonc` for the
-    prompt viewer:
-
-    ```json
-    {
-      "plugin": [
-        "@lunchbox-labs/opencode-prompt-composer"
-      ]
-    }
-    ```
+    Add `@lunchbox-labs/opencode-prompt-composer` to `plugin` in
+    `opencode.jsonc`, and to `tui.jsonc` for the prompt viewer.
 
     [Prompt Composer on GitHub](https://github.com/lunchbox-labs/opencode-prompt-composer)
 
