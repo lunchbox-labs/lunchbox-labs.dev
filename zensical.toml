@@ -2,6 +2,7 @@
 site_name = "Lunchbox Labs"
 site_description = "Developer tools, packages and apps from Lunchbox Labs."
 site_url = "https://lunchbox-labs.dev/"
+copyright = "Copyright &copy; 2026 Lunchbox Labs"
 docs_dir = "docs"
 site_dir = "site"
 nav = [
@@ -33,3 +34,8 @@ media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to System Preference"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/lunchbox-labs"
+name = "Lunchbox Labs on GitHub"
