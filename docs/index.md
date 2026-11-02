@@ -30,7 +30,11 @@ Lunchbox Labs makes an iPhone compass app and plugins for the OpenCode coding ag
     Add the package to `plugin` in both `opencode.jsonc` and `tui.jsonc`:
 
     ```json
-    { "plugin": ["@lunchbox-labs/opencode-config-composer"] }
+    {
+      "plugin": [
+        "@lunchbox-labs/opencode-config-composer"
+      ]
+    }
     ```
 
     [Config Composer on GitHub](https://github.com/lunchbox-labs/opencode-config-composer)
@@ -46,7 +50,11 @@ Lunchbox Labs makes an iPhone compass app and plugins for the OpenCode coding ag
     prompt viewer:
 
     ```json
-    { "plugin": ["@lunchbox-labs/opencode-prompt-composer"] }
+    {
+      "plugin": [
+        "@lunchbox-labs/opencode-prompt-composer"
+      ]
+    }
     ```
 
     [Prompt Composer on GitHub](https://github.com/lunchbox-labs/opencode-prompt-composer)
