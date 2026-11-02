@@ -17,8 +17,8 @@ Lunchbox Labs makes an iPhone compass app and plugins for the OpenCode coding ag
     See your direction on iPhone and while driving with CarPlay. Requires iOS 27
     or later.
 
-    [Website](https://compasslet.lunchbox-labs.dev/) ·
-    [GitHub](https://github.com/lunchbox-labs/compasslet)
+    [Compasslet website](https://compasslet.lunchbox-labs.dev/) ·
+    [Compasslet on GitHub](https://github.com/lunchbox-labs/compasslet)
 
 -   :lucide-sliders-horizontal:{ .lg .middle } **Config Composer**
 
@@ -33,14 +33,14 @@ Lunchbox Labs makes an iPhone compass app and plugins for the OpenCode coding ag
     { "plugin": ["@lunchbox-labs/opencode-config-composer"] }
     ```
 
-    [GitHub](https://github.com/lunchbox-labs/opencode-config-composer)
+    [Config Composer on GitHub](https://github.com/lunchbox-labs/opencode-config-composer)
 
 -   :lucide-text-quote:{ .lg .middle } **Prompt Composer**
 
     ---
 
     Share reusable prompt text across native OpenCode agents, commands and
-    skills with inline includes.
+    skills with inline includes. Requires Node 22.18 or later.
 
     Add the package to `plugin` in `opencode.jsonc`, and to `tui.jsonc` for the
     prompt viewer:
@@ -49,7 +49,7 @@ Lunchbox Labs makes an iPhone compass app and plugins for the OpenCode coding ag
     { "plugin": ["@lunchbox-labs/opencode-prompt-composer"] }
     ```
 
-    [GitHub](https://github.com/lunchbox-labs/opencode-prompt-composer)
+    [Prompt Composer on GitHub](https://github.com/lunchbox-labs/opencode-prompt-composer)
 
 </div>
 

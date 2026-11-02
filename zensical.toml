@@ -15,6 +15,7 @@ enabled = false
 
 [project.theme]
 font = false
+features = ["content.code.copy"]
 
 # The first palette follows the system appearance. The header toggle cycles
 # system -> light -> dark and remembers the choice in the browser.
