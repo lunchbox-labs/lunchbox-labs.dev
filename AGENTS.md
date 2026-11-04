@@ -9,7 +9,7 @@ Read these documents explicitly; GitHub does not automatically inherit them into
 
 ## Site
 
-This repository is the Lunchbox Labs website, built with [Zensical](https://zensical.org) from the Markdown pages in `docs/` and configured in `zensical.toml`. Keep pages in Markdown; do not add hand-written HTML or CSS.
+This repository is the Lunchbox Labs website, built with [Zensical](https://zensical.org) from the Markdown pages in `docs/` and configured in `zensical.toml`. Keep pages in Markdown; do not add hand-written HTML. The only stylesheet is `docs/stylesheets/brand.css`, which maps the [Lunchbox Labs brand colors](https://github.com/lunchbox-labs/.github/blob/main/brand/colors.md) onto the theme; keep it to color tokens and the overrides they need, and recheck contrast when it changes.
 
 Build and preview locally:
 
