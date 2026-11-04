@@ -1,9 +1,4 @@
-/*
-  Lunchbox Labs brand palette, from
-  https://github.com/lunchbox-labs/.github/blob/main/brand/colors.md
-  Zensical's named palettes cannot express these exact colors, so the theme
-  uses the custom palette and maps the brand tokens onto its variables here.
-*/
+/* Brand palette: https://github.com/lunchbox-labs/.github/blob/main/brand/colors.md */
 
 :root {
   --lunchbox-pink: #f78aee;
@@ -19,6 +14,7 @@
   --lunchbox-focus-outline: #281423;
   --lunchbox-card-border: #ecd5e8;
   --lunchbox-code-background: #f8eaf5;
+  --md-accent-bg-color: var(--lunchbox-page-background);
 
   --md-default-fg-color: var(--lunchbox-body-text);
   --md-default-fg-color--light: rgb(40 20 35 / 0.72);
@@ -45,15 +41,16 @@
   --lunchbox-focus-outline: #fff5fd;
   --lunchbox-card-border: #3d2c40;
   --lunchbox-code-background: #33253a;
+  --md-accent-bg-color: var(--lunchbox-pink-label);
 
   --md-default-fg-color: var(--lunchbox-body-text);
   --md-default-fg-color--light: rgb(255 245 253 / 0.72);
   --md-default-fg-color--lighter: rgb(255 245 253 / 0.5);
-  --md-default-fg-color--lightest: rgb(255 245 253 / 0.07);
+  --md-default-fg-color--lightest: rgb(255 245 253 / 0.12);
   --md-default-bg-color: var(--lunchbox-page-background);
-  --md-default-bg-color--light: rgb(24 17 26 / 0.7);
-  --md-default-bg-color--lighter: rgb(24 17 26 / 0.3);
-  --md-default-bg-color--lightest: rgb(24 17 26 / 0.12);
+  --md-default-bg-color--light: rgb(24 17 26 / 0.54);
+  --md-default-bg-color--lighter: rgb(24 17 26 / 0.26);
+  --md-default-bg-color--lightest: rgb(24 17 26 / 0.07);
   --md-code-fg-color: var(--lunchbox-body-text);
   --md-code-bg-color: var(--lunchbox-code-background);
   --md-code-bg-color--light: rgb(51 37 58 / 0.9);
@@ -66,11 +63,8 @@
   --md-primary-fg-color--light: var(--lunchbox-pink);
   --md-primary-fg-color--dark: var(--lunchbox-control-border);
   --md-primary-bg-color: var(--lunchbox-pink-label);
-  --md-primary-bg-color--light: rgb(40 20 35 / 0.7);
   --md-accent-fg-color: var(--lunchbox-focus-outline);
   --md-accent-fg-color--transparent: rgb(247 138 238 / 0.16);
-  --md-accent-bg-color: var(--lunchbox-pink-label);
-  --md-accent-bg-color--light: rgb(40 20 35 / 0.7);
   --md-typeset-a-color: var(--lunchbox-link-text);
 }
 
@@ -79,8 +73,19 @@
   background-color: var(--lunchbox-pink);
 }
 
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-typeset :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--lunchbox-body-text);
+}
+
 .md-header {
-  border-top: 0.2rem solid var(--lunchbox-pink);
+  box-shadow: inset 0 0.2rem 0 var(--lunchbox-pink);
+}
+
+.md-header--shadow {
+  box-shadow:
+    inset 0 0.2rem 0 var(--lunchbox-pink),
+    0 0.05rem 0 var(--md-default-fg-color--lightest);
 }
 
 .md-typeset .grid.cards > ul > li {
@@ -91,19 +96,16 @@
 .md-typeset .grid.cards > ul > li:focus-within,
 .md-typeset .grid.cards > ul > li:hover {
   border-color: var(--lunchbox-control-border);
-  box-shadow: none;
 }
 
 .md-typeset .grid.cards .twemoji {
   color: var(--lunchbox-control-border);
 }
 
-.md-typeset .md-button--primary {
-  border-color: var(--lunchbox-control-border);
-}
-
 a:focus-visible,
 a.focus-visible,
+.md-typeset a:focus-visible,
+.md-typeset a.focus-visible,
 button:focus-visible,
 .md-option.focus-visible + label,
 .md-option:focus-visible + label {
