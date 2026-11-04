@@ -112,3 +112,10 @@ button:focus-visible,
   outline: 3px solid var(--lunchbox-focus-outline);
   outline-offset: 3px;
 }
+
+.md-header__button:focus-visible,
+.md-header__button.focus-visible,
+.md-header .md-option:focus-visible + label,
+.md-header .md-option.focus-visible + label {
+  outline-offset: -6px;
+}
