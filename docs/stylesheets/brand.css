@@ -1,0 +1,121 @@
+/* Brand palette: https://github.com/lunchbox-labs/.github/blob/main/brand/colors.md */
+
+:root {
+  --lunchbox-pink: #f78aee;
+  --lunchbox-pink-label: #281423;
+}
+
+[data-md-color-scheme="default"] {
+  --lunchbox-page-background: #fff8fe;
+  --lunchbox-surface: #ffffff;
+  --lunchbox-body-text: #281423;
+  --lunchbox-link-text: #992b91;
+  --lunchbox-control-border: #992b91;
+  --lunchbox-focus-outline: #281423;
+  --lunchbox-card-border: #ecd5e8;
+  --lunchbox-code-background: #f8eaf5;
+  --md-accent-bg-color: var(--lunchbox-page-background);
+
+  --md-default-fg-color: var(--lunchbox-body-text);
+  --md-default-fg-color--light: rgb(40 20 35 / 0.72);
+  --md-default-fg-color--lighter: rgb(40 20 35 / 0.5);
+  --md-default-fg-color--lightest: rgb(40 20 35 / 0.07);
+  --md-default-bg-color: var(--lunchbox-page-background);
+  --md-default-bg-color--light: rgb(255 248 254 / 0.7);
+  --md-default-bg-color--lighter: rgb(255 248 254 / 0.3);
+  --md-default-bg-color--lightest: rgb(255 248 254 / 0.12);
+  --md-code-fg-color: var(--lunchbox-body-text);
+  --md-code-bg-color: var(--lunchbox-code-background);
+  --md-code-bg-color--light: rgb(248 234 245 / 0.7);
+  --md-code-bg-color--lighter: rgb(248 234 245 / 0.3);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 305deg;
+
+  --lunchbox-page-background: #18111a;
+  --lunchbox-surface: #241a26;
+  --lunchbox-body-text: #fff5fd;
+  --lunchbox-link-text: #f78aee;
+  --lunchbox-control-border: #f78aee;
+  --lunchbox-focus-outline: #fff5fd;
+  --lunchbox-card-border: #3d2c40;
+  --lunchbox-code-background: #33253a;
+  --md-accent-bg-color: var(--lunchbox-pink-label);
+
+  --md-default-fg-color: var(--lunchbox-body-text);
+  --md-default-fg-color--light: rgb(255 245 253 / 0.72);
+  --md-default-fg-color--lighter: rgb(255 245 253 / 0.5);
+  --md-default-fg-color--lightest: rgb(255 245 253 / 0.12);
+  --md-default-bg-color: var(--lunchbox-page-background);
+  --md-default-bg-color--light: rgb(24 17 26 / 0.54);
+  --md-default-bg-color--lighter: rgb(24 17 26 / 0.26);
+  --md-default-bg-color--lightest: rgb(24 17 26 / 0.07);
+  --md-code-fg-color: var(--lunchbox-body-text);
+  --md-code-bg-color: var(--lunchbox-code-background);
+  --md-code-bg-color--light: rgb(51 37 58 / 0.9);
+  --md-code-bg-color--lighter: rgb(51 37 58 / 0.54);
+}
+
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--lunchbox-pink);
+  --md-primary-fg-color--light: var(--lunchbox-pink);
+  --md-primary-fg-color--dark: var(--lunchbox-control-border);
+  --md-primary-bg-color: var(--lunchbox-pink-label);
+  --md-accent-fg-color: var(--lunchbox-focus-outline);
+  --md-accent-fg-color--transparent: rgb(247 138 238 / 0.16);
+  --md-typeset-a-color: var(--lunchbox-link-text);
+}
+
+::selection {
+  color: var(--lunchbox-pink-label);
+  background-color: var(--lunchbox-pink);
+}
+
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-typeset :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--lunchbox-body-text);
+}
+
+.md-header {
+  box-shadow: inset 0 0.2rem 0 var(--lunchbox-pink);
+}
+
+.md-header--shadow {
+  box-shadow:
+    inset 0 0.2rem 0 var(--lunchbox-pink),
+    0 0.05rem 0 var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .grid.cards > ul > li {
+  background-color: var(--lunchbox-surface);
+  border-color: var(--lunchbox-card-border);
+}
+
+.md-typeset .grid.cards > ul > li:focus-within,
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--lunchbox-control-border);
+}
+
+.md-typeset .grid.cards .twemoji {
+  color: var(--lunchbox-control-border);
+}
+
+a:focus-visible,
+a.focus-visible,
+.md-typeset a:focus-visible,
+.md-typeset a.focus-visible,
+button:focus-visible,
+.md-option.focus-visible + label,
+.md-option:focus-visible + label {
+  outline: 3px solid var(--lunchbox-focus-outline);
+  outline-offset: 3px;
+}
+
+.md-header__button:focus-visible,
+.md-header__button.focus-visible,
+.md-header .md-option:focus-visible + label,
+.md-header .md-option.focus-visible + label {
+  outline-offset: -6px;
+}
